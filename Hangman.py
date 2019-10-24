@@ -33,23 +33,23 @@ Hman = ['''
  	  ''','''
 
  +---+
- 0	 |
- |	 |
-/ \\ |
+ 0   |
+ |   |
+/ \\  |
 
 	  ''','''
 
  +---+
- 0	 |
- |\\ |
-/ \\ |
+ 0   |
+ |\\  |
+/ \\  |
 
  	  ''','''
 
  +---+
- 0	 |
-/|\\ |
-/ \\ |
+ 0   |
+/|\\  |
+/ \\  |
 
  	  '''
 ]
@@ -67,12 +67,11 @@ misses = 0
 
 for letter in myWord:
 	if letter == pGuess:
-		gList[index] = pGuess 
-		 
+		gList[index] = pGuess  
 		index += 1
 	else:
 		misses += 1
-		print(misses)
+		print(Hman[misses])
 		
 
 print(gList)
